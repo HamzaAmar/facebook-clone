@@ -1,0 +1,143 @@
+/* CSS Custom properties Start*/
+
+:root {
+  --base-blue: #1877f2;
+  --base-cherry: #f3425f;
+  --base-grape: #9360f7;
+  --base-lemon: #f7b928;
+  --base-lime: #45bd62;
+  --base-pink: #ff66bf;
+  --base-seafoam: #54c7ec;
+  --base-teal: #2abba7;
+  --base-tomato: #fb724b;
+  --blue-link: #4599ff;
+}
+
+/* CSS Custom properties End*/
+
+/* CSS Global Style Start*/
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd,
+ul,
+ol,
+pre {
+  margin: 0;
+}
+body {
+  box-sizing: border-box;
+  color: var(--black-text-light, #333);
+  background-color: var(--background-color-light, #fff);
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--font-family, 16px);
+  font-weight: 300;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  letter-spacing: inherit;
+  word-spacing: inherit;
+  margin: 0;
+}
+img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+/* CSS Global Style End*/
+
+/* 1.Common Components Start */
+
+/* Header Component */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.25rem 0.5rem;
+}
+.header__search-logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Footer Component */
+
+.footer {
+}
+
+/* sidebar Component */
+
+.footer {
+}
+
+/* 1.Common Components End */
+
+/* 2.Core Component Start */
+/* Buttons Styles */
+button {
+  appearance: none;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
+
+button:disabled,
+button[aria-disabled="true"],
+button.disabled {
+  cursor: not-allowed;
+}
+
+.btn--icon {
+  background-color: transparent;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn--icon-circle {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 50%;
+}
+
+.btn--icon:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Input Styles */
+
+/* 2.Core Component End */
